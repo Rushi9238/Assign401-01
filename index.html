@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3rem;
+}
+h1{
+    padding-top:3rem ;
+}
+#type{
+    border:2px solid cyan;
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+    </style>
+</head>
+<body>
+    <input oninput="tryIt()" type="text" name="" id="type">
+    <h1 id="h1"></h1>
+</body>
+<script>
+    function tryIt(){
+
+    var name=document.getElementById("type").value;
+    console.log(name,'abc');
+
+    let h1=document.getElementById("h1");
+    h1.innerText=name;
+}
+</script>
+
+</html>
